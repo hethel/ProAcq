@@ -1,0 +1,17 @@
+﻿<Window x:Name="StopWatchWindow" x:Class="ProAcq.StopWatch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProAcq"
+        mc:Ignorable="d"
+        Title="Stop Watch" Height="135" Width="275" Topmost="True" Closed="Window_Closed" WindowStyle="ToolWindow" ResizeMode="NoResize">
+
+
+    <Grid  Background="#FF0C00FF">
+        <Label x:Name="labelSW" Content="StopWatch" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="182" Height="54"  Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" FontSize="32"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="75" Click="btnStart_Click"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="90,69,0,0" VerticalAlignment="Top" Width="75" Click="btnStop_Click"/>
+        <Button x:Name="btnMemo" Content="Memo" HorizontalAlignment="Left" Margin="176,69,0,0" VerticalAlignment="Top" Width="75" Click="btnMemo_Click"/>
+    </Grid>
+</Window>
