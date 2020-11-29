@@ -86,7 +86,7 @@ namespace ProAcq
         {
             MessageBox.Show("ProAqc is a small tool for visual process identification and manually process recording.\n" + "\n" +
                             "This tool can be used for measuring and recording of process properties like a relative time span with the Stop Watch App and an absolute time clock with the Time Stamp App.\n" + "\n" +
-                            "It automatically writes logfiles to save process data from memo fields in directory c:\\ProcAcq\\.\n" + "\n" +
+                            "It automatically writes logfiles to save process data from memo fields in directory c:\\ProAcq\\.\n" + "\n" +
                             "The data are saved in log file when closing the window.\n" + "\n" +
                             "8. Dec 2016 ");
         }
