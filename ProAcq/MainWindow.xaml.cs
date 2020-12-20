@@ -10,10 +10,10 @@ namespace ProAcq
    
     public partial class MainWindow : Window
     {
-        System.Windows.Threading.DispatcherTimer timer;
+        readonly System.Windows.Threading.DispatcherTimer timer;
 
         StopWatch stopWatch = new StopWatch();  // reference needed to disable context menu
-        string path = @"c:\ProAcq\";            // Process Data log directory
+        readonly string path = @"c:\ProAcq\";            // Process Data log directory
 
 
         public MainWindow()
@@ -26,7 +26,7 @@ namespace ProAcq
 
             // start timer and display current time
             timer.Start();
-            timer.Tick += new EventHandler(showTime);
+            timer.Tick += new EventHandler(ShowTime);
 
             // StopWatch not activ
             stopWatch.Stopwatch_active = false;
@@ -34,7 +34,7 @@ namespace ProAcq
 
 
         //Method for Timer
-        private void showTime(object sender, EventArgs e)
+        private void ShowTime(object sender, EventArgs e)
         {
             // display current time on label
             label.Content = DateTime.Now.ToString("HH:mm:ss");
@@ -67,12 +67,6 @@ namespace ProAcq
         }
 
 
-        private void CMenu1_active()
-        {
-            CMenu1.IsEnabled = true;
-        }
-
-
         // Context-Menu Time Stamp
         private void CMenu2_Click(object sender, RoutedEventArgs e)
         {
@@ -86,9 +80,9 @@ namespace ProAcq
         {
             MessageBox.Show("ProAqc is a small tool for visual process identification and manually process recording.\n" + "\n" +
                             "This tool can be used for measuring and recording of process properties like a relative time span with the Stop Watch App and an absolute time clock with the Time Stamp App.\n" + "\n" +
-                            "It automatically writes logfiles to save process data from memo fields in directory c:\\ProcAcq\\.\n" + "\n" +
+                            "It automatically writes logfiles to save process data from memo fields in directory c:\\ProAcq\\.\n" + "\n" +
                             "The data are saved in log file when closing the window.\n" + "\n" +
-                            "8. Dec 2016 ");
+                            "20 Dec 2020 ");
         }
 
 

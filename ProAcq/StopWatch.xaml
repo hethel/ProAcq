@@ -10,8 +10,8 @@
 
     <Grid  Background="#FF0C00FF">
         <Label x:Name="labelSW" Content="StopWatch" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top" Width="182" Height="54"  Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" FontSize="32"/>
-        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="75" Click="btnStart_Click"/>
-        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="90,69,0,0" VerticalAlignment="Top" Width="75" Click="btnStop_Click"/>
-        <Button x:Name="btnMemo" Content="Memo" HorizontalAlignment="Left" Margin="176,69,0,0" VerticalAlignment="Top" Width="75" Click="btnMemo_Click"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Width="75" Click="BtnStart_Click"/>
+        <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="90,69,0,0" VerticalAlignment="Top" Width="75" Click="BtnStop_Click"/>
+        <Button x:Name="btnMemo" Content="Memo" HorizontalAlignment="Left" Margin="176,69,0,0" VerticalAlignment="Top" Width="75" Click="BtnMemo_Click"/>
     </Grid>
 </Window>

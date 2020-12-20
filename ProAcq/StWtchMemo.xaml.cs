@@ -10,11 +10,11 @@ namespace ProAcq
     public partial class StWtchMemo : Window
     {
         string sw_memo;     // stop watch memo
-        string sw_time;     // stop watch memo time
-        string sw_LogName;  // stop watch memo file name
-        string sw_path;     // memo time directory
+        readonly string sw_time;     // stop watch memo time
+        readonly string sw_LogName;  // stop watch memo file name
+        readonly string sw_path;     // memo time directory
 
-        StopWatch sw = new StopWatch();
+        readonly StopWatch sw = new StopWatch();
         DirectoryInfo sw_di;
 
         public StWtchMemo()

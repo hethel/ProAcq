@@ -26,20 +26,20 @@ namespace ProAcq
             // Stop watch init and set Millisecands
             timer = new System.Windows.Threading.DispatcherTimer();
             timer.Interval = TimeSpan.FromMilliseconds(100);
-            timer.Tick += new EventHandler(showTime);
+            timer.Tick += new EventHandler(ShowTime);
 
             btnStop.IsEnabled = false;
             Stopwatch_active = true;    // StopWatch-Window open
         }
 
-        private void showTime(object sender, EventArgs e)
+        private void ShowTime(object sender, EventArgs e)
         {
             dateDiff = dateDiff.AddMilliseconds(100);
             labelSW.Content = dateDiff.ToString("HH:mm:ss");
             memoTime = dateDiff.ToString("HH:mm:ss:f");
         }
 
-        private void btnStart_Click(object sender, RoutedEventArgs e)
+        private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
             timer.Start();
 
@@ -47,7 +47,7 @@ namespace ProAcq
             btnStart.IsEnabled = false;
         }
 
-        private void btnStop_Click(object sender, RoutedEventArgs e)
+        private void BtnStop_Click(object sender, RoutedEventArgs e)
         {
             timer.Stop();
             labelSW.Content = dateDiff.ToString("HH:mm:ss:f");
@@ -61,7 +61,7 @@ namespace ProAcq
             timer.Stop();   // stop timer
         }
 
-        private void btnMemo_Click(object sender, RoutedEventArgs e)
+        private void BtnMemo_Click(object sender, RoutedEventArgs e)
         {
             stWtchMemo = new StWtchMemo();
             stWtchMemo.WindowStartupLocation = WindowStartupLocation.CenterScreen;
